@@ -1,0 +1,88 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.task-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Keep margin */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Default blue for Add */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
+li .actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+li .actions .delete-btn {
+    background-color: #dc3545; /* Red */
+}
+
+li .actions .complete-btn {
+    background-color: #28a745; /* Green */
+}
+
+/* Style for the new Edit button */
+li .actions .edit-btn {
+    background-color: #ffc107; /* Yellow/Orange */
+    color: #212529; /* Dark text for better contrast */
+}
+
+
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: #6c757d;
+}
